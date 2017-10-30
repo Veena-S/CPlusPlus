@@ -67,13 +67,13 @@ namespace <identifier>
   }
   ```
 * There are 2 ways to refer to a name within a namespace:
-** By including the namespace identifier followed by the scope resolution operator.
-   With this, only specific members of the namespace can be introduced.
-** By introducing the entire namespace by the use of "using" directive	
-		```C++
-		using namespace *<namespace_name>*
-		```
-   Doing so will allow the programmer to call functions from within the namespace without having to specify the namespace of the function while in the current scope.
+  * By including the namespace identifier followed by the scope resolution operator.
+    With this, only specific members of the namespace can be introduced.
+  * By introducing the entire namespace by the use of "using" directive	
+	```C++
+	using namespace *<namespace_name>*
+	```
+    Doing so will allow the programmer to call functions from within the namespace without having to specify the namespace of the function while in the current scope.
 
 	(_Preferred way of usage is scope resolution._)
 	
