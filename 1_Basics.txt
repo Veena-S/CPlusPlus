@@ -1,14 +1,14 @@
-#Basics of C++
+# Basics of C++
 ---------------
 
-COMPILERS
+## COMPILERS
 ----------
 
 A compiler turns the program that you write into an executable that your computer can actually understand and run.
 
 Computer language is called machine language
 
-Introduction to C++
+## Introduction to C++
 -------------------
 
 A C++ program is a collection of commands, which tell the computer to do ""something"". 
@@ -21,7 +21,7 @@ So how do you get access to those prewritten functions?
 To access those standard functions that comes with the compiler, you include a header with the #include directive.
 What this does is effectively take everything in the header and paste it into your program.
 
-Sample Program:-
+*Sample Program*:-
 ----------------
 #include <iostream>		// Preprocessor
 using namespace std:
@@ -46,7 +46,7 @@ cout<< results in a function call with the ensuing text as an argument to the fu
 The next command is cin.get(). This is another function call: it reads in input and expects the user to hit the return key. Many compiler environments will open a new console window, run the program, and then close the window. This command keeps that window from closing because the program is not done yet because it waits for you to hit enter. Including that line gives you time to see the program run. 
 
 
-Comments
+## Comments
 --------
 
 Two slash signs indicate that the rest of the line is a comment inserted by the programmer but which has no effect on the behavior of the program. Programmers use them to include short explanations or observations concerning the code or program. 
