@@ -30,38 +30,41 @@ namespace <identifier>
 	<entities>
 }
 ```
-
-
-For instance, if you had a program that connected to the Internet, you might have a namespace to handle all connection functions: 
+* Declarations that fall outside all the namespaces are still members of the global namespace
+* **Extension-Namespace-Definition**:- A namespace definition can be continued over multiple header files like this:
 	```C++
-	namespace net_connect
+	// File1.h
+	namespace myFile
 	{
-	  int make_connection();
-	  int test_connection();
-	  //so forth...
+	    <entities>
+	}
+	
+	// File2.h
+	namespace myFile
+	{
+	
 	}
 	```
-	
-You can then refer to functions that are part of a namespace by prefixing the function with the namespace name followed by the scope operator -- ::. For instance,
+* __Namespace-alias__:- Giving an alternate name for a namespace.
 	```C++
-	net_connect::make_connection()
+	namespace low_and_high_density
+	{
+		class Density
+		{
+		};
+	}
+	namespace lahd = low_and_high_density
 	```
-	
-By enabling this program structure, C++ makes it easier for you to divide up a program into groups that each perform their own separate functions, in the same way that classes or structs simplify object oriented design. 
-But namespaces, unlike classes, do not require instantiation; you do not need an object to use a specific namespace. You only need to prefix the function you wish to call with namespace_name:: -- similar to how you would call a static member function of a class. 
-
-
-We can use the namespace in 2 different ways:
-	1. By including the namespace identifier followed by the scope resolution operator.
+* A namespace definition can only appear at the global scope or within another namespace definition.
+* There are 2 ways to refer to a name within a namespace:
+	a) By including the namespace identifier followed by the scope resolution operator.
 		With this, only specific members of the namespace can be introduced.
-	2. By introducing the entire namespace by the use of "using" directive
+	b) By introducing the entire namespace by the use of "using" directive
 		```C++
 		using namespace *<namespace_name>*
 		```
 		Doing so will allow the programmer to call functions from within the namespace without having to specify the namespace of the function while in the current scope.
 
-
-
-
-
-
+	(_Preferred way of usage is scope resolution._)
+	
+	
