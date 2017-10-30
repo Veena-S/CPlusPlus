@@ -23,6 +23,7 @@ What this does is effectively take everything in the header and paste it into yo
 
 *Sample Program*:-
 ----------------
+```C++
 #include <iostream>		// Preprocessor
 using namespace std:
 int main()
@@ -30,6 +31,7 @@ int main()
 	cout << "Hello World\n";
 	cin.get();
 }
+```
 
 
 The #include is a "preprocessor" directive that tells the compiler to put code from the header called iostream into our program before actually creating the executable. By including header files, you gain access to many different functions. For example, the cout function requires iostream.
@@ -52,8 +54,10 @@ The next command is cin.get(). This is another function call: it reads in input 
 Two slash signs indicate that the rest of the line is a comment inserted by the programmer but which has no effect on the behavior of the program. Programmers use them to include short explanations or observations concerning the code or program. 
 C++ supports two ways of commenting code:
 
+```
 // line comment
 /* block comment */ 
+```
 
 The first of them, known as line comment, discards everything from where the pair of slash signs (//) are found up to the end of that same line. The second one, known as block comment, discards everything between the /* characters and the first appearance of the */ characters, with the possibility of including multiple line
 
