@@ -56,10 +56,20 @@ namespace <identifier>
 	namespace lahd = low_and_high_density
 	```
 * A namespace definition can only appear at the global scope or within another namespace definition.
+  For example, the following code is wrong.
+  ```C++
+  int main()
+  {
+  	namespace Local	// Error
+	{
+	}
+	return 0;
+  }
+  ```
 * There are 2 ways to refer to a name within a namespace:
 	a) By including the namespace identifier followed by the scope resolution operator.
 		With this, only specific members of the namespace can be introduced.
-	b) By introducing the entire namespace by the use of "using" directive
+	b) By introducing the entire namespace by the use of "using" directive	
 		```C++
 		using namespace *<namespace_name>*
 		```
