@@ -54,7 +54,7 @@ The next command is cin.get(). This is another function call: it reads in input 
 Two slash signs indicate that the rest of the line is a comment inserted by the programmer but which has no effect on the behavior of the program. Programmers use them to include short explanations or observations concerning the code or program. 
 C++ supports two ways of commenting code:
 
-```
+```C++
 // line comment
 /* block comment */ 
 ```
